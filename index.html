@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Internet szolgáltatás</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="szolg.css">
+    <script src="szolg.js"></script>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="ora">
+            <script>
+                function orakiir() {
+                    var datum = new Date();
+                    var ora = datum.getHours();
+                    var perc = datum.getMinutes();
+                    var mperc = datum.getSeconds();
+                    var ki = document.getElementById("ora");
+                    var nap = datum.toLocaleDateString();
+                    ki.innerHTML = nap + " " + ora + ":" + perc + ":" + mperc;
+                }
+                var ido = setInterval(orakiir, 1000)
+                orakiir();
+            </script>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#internet">Mi az internet?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#szolgaltatok">Internet szolgáltatók</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kutatas">Közvélemény kutatás</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vendegkonyv">Vendégkönyv</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header id="fejlec">
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-left">
+            <div class="col-12 text-left">
+                <h1>INTERNET</h1>
+                <p id="motto">...ami mindent behálóz!</p>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+<div class="container">
+    <section id="internet">
+        <h2>Mi is az internet?...</h2>
+        <p>
+            Az internet olyan globális számítógépes hálózat, amelyen a számítógépek az internetprotokoll (IP)
+            segítségével kommunikálnak. Felhasználók milliárdjait kapcsolja össze és
+            lehetővé teszi olyan elosztott rendszerek működtetését, mint például a világháló (World Wide Web, WWW).
+            Az internet kifejezés nemzetközileg elterjedt szó, az angol eredetű internetwork szóból ered, ami
+            magyarul leginkább ’hálózatok hálózata’-ként adható vissza, szó szerint
+            hálózatok közöttit jelent. Az internet az egész világot körülölelő számítógép-hálózat, hatalmas
+            rendszer, amely kisebb számítógép-hálózatokat fog össze. Ennek eredménye egyfajta
+            kibertér, amely a valódi világ mellett alternatív teret biztosít. Az internet a számítógépek
+            összekötéséből jött létre, hogy az egymástól teljesen különböző hálózatok egymással
+            átlátszó módon tudjanak elektronikus leveleket cserélni, állományokat továbbítani.(forrás:<a
+                href="https://hu.wikipedia.org/wiki/Internet" target="_blanc">Wikipédia</a>)
+        </p>
+        <center><img src="kepek/internet3.jpg" alt="Világháló" title="Internet" class="img-fluid img-thumbnail"></center>
+    </section>
+
+
+    <section id="szolgaltatok" class="alaphatter">
+        <h2>Nagyobb Magyarországi internet szolgáltatók:</h2><br>
+        <div class="row">
+            <div class="card col-md-6 col-12">
+                <img class="card-img-top" src="kepek/telekom.jpg" alt="Magyar telekom" title="Magyar Telekom"
+                    class="img-fluid img-thumbnail">
+                <div class="card-body">
+                    <h4 class="card-title">Magyar Telekom</h4>
+                    <p class="card-text">Magyar Telekom (MT) távközlési és telekommunikációs vállalat, Magyarország
+                        legnagyobb távközlési szolgáltatója és egyben egyik legnagyobb cége.
+                        A cég telekommunikációs és infokommunikációs (ICT) szolgáltatásokat nyújt vezetékes és mobil
+                        viszonylatban, adatátviteli és nem hangalapú, informatikai és rendszerintegrációs
+                        területeken.
+                        Lakossági, valamint kis- és középvállalati ügyfelei részére Telekom, nagyvállalati,
+                        közigazgatási és intézményi ügyfeleinek pedig T-Systems Magyarország márkanéven nyújtja
+                        szolgáltatásait.
+                        A Magyar Telekom Nyrt. többségi tulajdonosa a Makedonski Telekomnak, Macedónia legnagyobb
+                        vezetékes és mobilszolgáltatójának. A Magyar Telekom többségi tulajdonosa (59,21%) a CMobil
+                        B.V.,
+                        amely a Deutsche Telekom AG kizárólagos tulajdona.</p>
+                </div>
+            </div>
+            <div class="card col-md-6 col-12">
+                <img class="card-img-top" src="kepek/upc.jpg" alt="UPC Vodafne" title="UPC Vodafne"
+                    class="img-fluid img-thumbnail">
+                <div class="card-body">
+                    <h4 class="card-title">UPC Vodafne</h4>
+                    <p class="card-text">A Vodafone Group Plc. a világ legnagyobb távközlési szolgáltatója bevétel
+                        alapján, melynek központja az angliai Newbury (Berkshire). 2007 februárjában több mint 200
+                        millió ügyfele volt 27 országban.
+                        További 38 országban rendelkezik érdekeltséggel. A Vodafone név a voice data fone
+                        rövidítése.A Vodafone-csoport és a Liberty Global közötti 2018. évi tranzakció következtében
+                        a Vodafone Magyarország lett a UPC Magyarország
+                        100 százalékos tulajdonosa. A két szolgáltató ezt követően cégcsoportként,
+                        de különálló vállalatként működött tovább.2019-ben a Vodafone vezetői bejelentették, hogy a
+                        tranzakciót követően a UPC név várhatóan eltűnik a magyar piacról és azt a Vodafone váltja
+                        fel.</p>
+                </div>
+            </div>
+            <div class="card col-md-6 col-12">
+                <img class="card-img-top" src="kepek/digi.jpg" alt="DIGI" title="DIGI" class="img-fluid img-thumbnail">
+                <div class="card-body">
+                    <h4 class="card-title">DIGI</h4>
+                    <p class="card-text">A DIGI Távközlési és Szolgáltató Kft. (DIGI) egy távközlési és
+                        médiaszolgáltató vállalat. A cég tulajdonosa a romániai RCS&RDS konzorcium, mely a holland
+                        bejegyzésű Digi Communications N.V. leányvállalata.
+                        A cégcsoport többségi tulajdonosa Teszári Zoltán romániai magyar vállalkozó. A cég elődjének
+                        az 1994-ben alapított EPA-HCS Kft. (2000-től EMKTV Kft.) tekinthető. A társaság a 90-es
+                        években 15 kisebb kábeltársaságot
+                        vásárolt fel (főként Budapesten), így a szolgáltatási terület folyamatosan bővült. A DIGI
+                        márkanevet 2006-ban vezették be Magyarországon. A cégek infrastruktúrája és tulajdonosi
+                        szerkezete gyakorlatilag ugyanaz.
+                        A cég műholdas és kábeltelevízió-, vezetékes/mobilinternet-, valamint telefon
+                        szolgáltatásaival Magyarországon kívül Romániában, Olaszországban és Spanyolországban is
+                        jelen van.</p>
+                </div>
+            </div>
+            <div class="card col-md-6 col-12">
+                <img class="card-img-top" src="kepek/invitel.jpg" alt="Invitel" title="Invitel"
+                    class="img-fluid img-thumbnail">
+                <div class="card-body">
+                    <h4 class="card-title">Invitel</h4>
+                    <p class="card-text">Az Invitel a magyar tele- és infokommunikációs piac egyik meghatározó
+                        szereplője. Az Invitel – jogelőd vállalatai révén – 1995 óta működik Magyarországon. A
+                        cégcsoport 2002 óta használja az Invitel elnevezést.
+                        A távközlési cég lakossági- és üzleti ügyfelek, valamint nagykereskedelmi partnerek számára
+                        egyaránt nyújt szolgáltatásokat.
+                        A távközlési iparágban szokásos gyakorlattal összhangban a MEP egyik leányvállalata, az
+                        Invitelt 100%-ban közvetlenül tulajdonló Magyar Telecom B.V. (Matel) 2004-től kezdődően, az
+                        Invitel cégcsoport finanszírozása érdekében
+                        kötvényeket bocsátott ki és refinanszírozott a luxemburgi tőzsdén. 2013-ban a Matel a
+                        cégcsoport tőkeszerkezetét átalakította azzal a céllal, hogy annak optimális működéséhez
+                        szükséges, hosszú távon is fenntartható finanszírozási struktúrát alakítson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="kutatas">
+
+        <h2>Egy kis közvélemény kutatás:</h2>
+        <p id="kutatas">Amennyiben szeretnél részt venni benne, kérlek add meg az adatokat a lenti táblázatban!
+            Köszönöm!</p>
+
+    </section>
+    <section id="kutatas" class="alaphatter">
+        <div class="felso">
+            <label for="nev">Név:</label>
+            <input type="text" name="" id="nev">
+            <label for="dij">Havi díj:</label>
+            <input type="text" name="" id="dij"> Forint<br>
+            Ki az internet szolgáltatód?<br>
+            <label for="tel">Magyar Telekom</label>
+            <input type="radio" name="radio" id="tel" checked><br>
+            <label for="upc">UPC - Vodafone</label>
+            <input type="radio" name="radio" id="upc"><br>
+            <label for="digi">Digi</label>
+            <input type="radio" name="radio" id="digi"><br>
+            <label for="invitel">Invitel</label>
+            <input type="radio" name="radio" id="invitel"><br>
+            <label for="valtott">Szolgáltatót váltottam 1 éven belül: </label>
+            <input type="checkbox" name="" id="valtott"><br>
+            <button onclick="felvesz()">Feliratkozom!</button>
+            <p>(Amennyiben menet közben mégis szolgáltatót váltott, úgy egy kattintással átrakhatja magát a másik
+                listába!)</p>
+            <p id="hiba"></p>
+        </div>
+        <div class="tarto">
+            <div class="bal">
+                <h2>Internet adatok:</h2>
+                <div id="ki"></div>
+            </div>
+            <div class="jobb">
+                <h2>Szolgáltatót váltott:</h2>
+                <div id="be"></div>
+            </div>
+        </div>
+
+    </section>
+    <section id="vendegkonyv" class="alaphatter">
+        <h2>Vendégkönyv</h2>
+        <p>Ossza meg másokkal, hogy mi tetszett az oldalon, vagy mesélje el, hogy miért váltott szolgáltatót!</p>
+
+        <label for="neve">A neved:</label>
+        <input type="text" id="neve"><br>
+        <label for="szoveg">Hozzászólásod:</label><br>
+        <textarea name="" id="szoveg" cols="80" rows="5"></textarea><br>
+        <button onclick="felveszi()">OK</button>
+
+        <div id="ven"></div>
+        <script>
+            var tomb = [];
+            var ki = document.getElementById("ven");
+            function Hsz(neve, szoveg, ido) {
+                this.neve = neve;
+                this.szoveg = szoveg;
+                this.ido = ido;
+            }
+            function felveszi() {
+                var neve = document.getElementById("neve");
+                var szoveg = document.getElementById("szoveg");
+                var datum = new Date();
+                hsz = new Hsz(neve.value, szoveg.value, datum.toLocaleString());
+                neve.value = "";
+                szoveg.value = "";
+                tomb.push(hsz);
+                kiirja();
+
+            }
+            function kiirja() {
+                ki.innerHTML = "";
+                for (var i = 0; i < tomb.length; i++) {
+                    var hsz = tomb[i];
+                    ki.innerHTML += "<p>" + hsz.neve + " : " + hsz.ido + "</p><p class='szoveg'> " + hsz.szoveg + "</p>";
+                }
+            }
+            kiirja();
+        </script>
+    </section>
+</div>
+
+<footer id="kapcsolat" class="py-4 bg-dark text-white-50">
+    <div class="text-center">
+        <small>
+            Rékási László <br />
+            113/c Esti<br />
+            [ rekalaca ]<br />
+            Email: <a href="mailto:rekalaca@gmail.com">rekalaca@gmail.com</a>
+
+        </small>
+
+    </div>
+</footer>
+</body>
+
+</html>
